@@ -108,12 +108,12 @@
 
     <div class="notice">
       <p>이 개인정보 처리방침은 돋보기 - 어르신을 위한 쉬운 돋보기 Android 앱이 사용자 데이터를 접근, 사용, 보관 및 삭제하는 방식을 설명합니다.</p>
-      <p>앱은 회원가입, 로그인, 결제, 광고 또는 개발자 서버와의 인터넷 통신 기능을 제공하지 않으며, 사용자 계정이나 데이터베이스를 운영하지 않습니다.</p>
+      <p>앱은 회원가입, 로그인 또는 결제 기능을 제공하지 않으며, 개발자 자체 사용자 서버나 데이터베이스를 운영하지 않습니다. 앱 하단에는 Google Mobile Ads를 통한 배너 광고가 표시될 수 있습니다.</p>
       <p>카메라 화면, 멈춘 화면 및 글자 인식 결과는 기능 제공을 위해 기기 안에서 처리되며 사진, 인식 결과 또는 합성 음성을 파일로 저장하지 않습니다.</p>
     </div>
 
     <h2>1. 앱에서 처리하는 데이터</h2>
-    <p>앱은 돋보기와 글자 읽기 기능을 제공하기 위해 아래 정보를 처리합니다. 개발자는 이 정보를 수집하거나 전송받지 않습니다.</p>
+    <p>앱은 돋보기, 글자 읽기 및 광고 기능을 제공하기 위해 아래 정보를 처리합니다. 개발자는 카메라 영상, 멈춘 화면 또는 인식된 글자를 자체 서버로 수집하거나 전송받지 않습니다.</p>
     <table>
       <thead>
       <tr>
@@ -143,6 +143,16 @@
         <td>사용자가 읽어주기를 선택하면 인식된 글자가 기기에 설정된 기본 Android TextToSpeech 엔진에 전달됩니다. 앱은 합성 음성을 파일로 저장하지 않습니다.</td>
         <td>인식된 글자를 음성으로 들을 수 있도록 하기 위해 사용합니다.</td>
       </tr>
+      <tr>
+        <td>광고, 기기 및 진단 정보</td>
+        <td>Google Mobile Ads SDK가 IP 주소(대략적인 위치 추정에 사용될 수 있음), 앱·광고 상호작용, 진단 정보, Android 광고 ID·앱 세트 ID 등의 기기 또는 계정 식별자를 자동으로 수집하고 Google과 공유할 수 있습니다.</td>
+        <td>배너 광고 제공, 광고 효과 분석, 서비스 안정성 확인 및 부정 사용 방지</td>
+      </tr>
+      <tr>
+        <td>광고 개인정보 선택</td>
+        <td>Google User Messaging Platform(UMP) SDK가 적용 지역에서 광고 동의 상태와 개인정보 선택을 확인하고 처리할 수 있습니다.</td>
+        <td>관련 법령에 따른 동의 화면과 개인정보 선택 기능 제공 및 광고 요청 가능 여부 결정</td>
+      </tr>
       </tbody>
     </table>
 
@@ -152,21 +162,26 @@
       <li>카메라 권한을 허용하지 않으면 돋보기 기능을 사용할 수 없지만 앱이 종료되거나 빈 화면을 표시하지는 않습니다.</li>
       <li>사용자는 Android 설정에서 언제든지 카메라 권한을 변경하거나 철회할 수 있습니다.</li>
       <li>앱은 마이크, 위치, 연락처, 전화, 문자, 저장공간 또는 사진·동영상 접근 권한을 요청하지 않습니다.</li>
-      <li>앱 자체는 인터넷 및 네트워크 상태 권한을 선언하지 않습니다. 다만 기기의 기본 읽어주기 엔진은 자체 권한과 설정에 따라 네트워크를 사용할 수 있습니다.</li>
+      <li>앱은 Google 광고와 광고 개인정보 선택 기능을 제공하고 네트워크 연결 상태를 확인하기 위해 인터넷 및 네트워크 상태 권한을 사용합니다.</li>
+      <li>Google Mobile Ads SDK는 광고 제공, 측정 및 부정 사용 방지를 위해 Android 광고 ID 등 관련 식별자를 사용할 수 있습니다.</li>
+      <li>기기의 기본 읽어주기 엔진은 자체 권한과 설정에 따라 네트워크를 사용할 수 있습니다.</li>
     </ul>
 
     <h2>3. 데이터 전송 및 외부 서비스</h2>
-    <p>앱은 카메라 영상, 멈춘 화면 또는 인식된 글자를 개발자 서버로 업로드하거나 판매하지 않으며 광고 목적으로 공유하지 않습니다. 다음 기기 기능 또는 외부 서비스가 각자의 역할에 따라 정보를 처리할 수 있습니다.</p>
+    <p>앱은 카메라 영상, 멈춘 화면 또는 인식된 글자를 개발자 서버로 업로드하거나 판매하지 않으며 Google 광고 서비스로 전송하지 않습니다. 다음 기기 기능 또는 외부 서비스가 각자의 역할에 따라 정보를 처리할 수 있습니다.</p>
     <ul>
       <li><strong>Google ML Kit 한국어 글자 인식:</strong> 한국어 인식 모델이 앱에 포함되어 있으며, 사용자가 글자 읽기를 선택했을 때 이미지와 글자를 기기 안에서 처리합니다. 앱은 글자 인식을 위해 해당 데이터를 외부 서버로 전송하지 않습니다.</li>
       <li><strong>Android 카메라 서비스:</strong> 카메라 미리보기, 확대, 초점 및 손전등을 제공하기 위해 Android 시스템과 기기 제조사의 카메라 기능을 사용합니다.</li>
       <li><strong>Android 음성합성 서비스:</strong> 읽어주기 기능은 기기에 설정된 기본 TextToSpeech 엔진을 사용합니다. 엔진과 선택된 음성에 따라 인식된 글자가 기기 안에서 처리되거나 네트워크 기반 음성 합성을 위해 엔진 제공자에게 전달될 수 있습니다. 이후 처리는 해당 제공자의 개인정보 처리방침과 사용자 설정을 따릅니다.</li>
+      <li><strong>Google Mobile Ads SDK 및 UMP SDK:</strong> 광고 제공, 동의 및 개인정보 선택 관리, 광고 측정과 부정 사용 방지를 위해 위에 설명한 광고·기기·진단 정보와 동의 정보를 처리할 수 있습니다. 카메라 영상, 멈춘 화면 및 인식된 글자는 Google 광고 서비스로 전송되지 않습니다. Google Mobile Ads SDK가 전송하는 데이터는 전송 중 TLS로 암호화됩니다.</li>
       <li><strong>GitHub Pages:</strong> 이 개인정보 처리방침 페이지를 제공하는 과정에서 IP 주소, 접속 시각, 브라우저 및 사용자 에이전트와 같은 일반적인 웹 요청 정보가 처리될 수 있습니다.</li>
       <li><strong>법적 요구:</strong> 관련 법령, 법원 또는 수사기관의 적법한 요청이 있는 경우 법률이 요구하는 범위에서 정보가 제공될 수 있습니다. 다만 개발자는 앱 사용자 데이터베이스를 보유하지 않습니다.</li>
     </ul>
-    <p>Google ML Kit, Android 시스템 서비스, 음성합성 엔진 및 GitHub Pages에서 처리하는 정보에는 각 제공자의 정책이 적용될 수 있습니다.</p>
+    <p>Google ML Kit, Google 광고 서비스, Android 시스템 서비스, 음성합성 엔진 및 GitHub Pages에서 처리하는 정보에는 각 제공자의 정책이 적용될 수 있습니다.</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
+      <li><a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">Google 광고 데이터 이용 안내</a></li>
+      <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK 데이터 공개 안내</a></li>
       <li><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 개인정보 보호정책</a></li>
     </ul>
 
@@ -178,18 +193,21 @@
       <li>읽어주기를 위해 생성된 음성은 앱이 파일로 저장하지 않습니다.</li>
       <li>앱 전용 데이터는 Android 클라우드 백업 및 기기 간 전송 대상에서 제외되도록 구성되어 있습니다.</li>
       <li>음성합성 엔진 제공자가 처리한 데이터의 보관 및 삭제에는 해당 제공자의 정책과 사용자 설정이 적용됩니다.</li>
+      <li>Google이 광고 및 동의 기능을 위해 처리하는 데이터의 보관과 삭제는 Google 정책 및 사용자의 Google·Android 광고 설정에 따릅니다.</li>
       <li>앱은 회원 계정을 만들지 않으므로 별도의 계정 삭제 절차가 필요하지 않습니다.</li>
     </ul>
 
     <h2>5. 보안</h2>
-    <p>앱은 기능 제공에 필요한 최소한의 데이터만 처리합니다. 카메라 영상과 글자 인식 결과는 기기 메모리에서 처리하고 저장하지 않으며, 앱 자체는 인터넷 권한이나 개발자 서버를 사용하지 않습니다.</p>
+    <p>앱은 기능 제공에 필요한 최소한의 데이터만 처리합니다. 카메라 영상과 글자 인식 결과는 기기 메모리에서 처리하고 저장하지 않으며 개발자 서버로 전송하지 않습니다. 광고 관련 네트워크 데이터는 Google Mobile Ads SDK를 통해 암호화되어 전송됩니다.</p>
     <p>읽어주기 엔진에 전달된 글자의 보안은 해당 엔진, 운영체제, 기기 제조사 및 사용자의 설정에 따라 달라질 수 있습니다.</p>
 
     <h2>6. 광고, 분석 및 사용자 추적</h2>
-    <p>앱은 광고 SDK, 맞춤 광고, 사용자 행동 분석 SDK, 충돌 보고 SDK 또는 개발자 자체 추적 서비스를 사용하지 않습니다. 광고 식별자를 이용해 사용자를 추적하거나 사용자 프로필을 만들지 않습니다.</p>
+    <p>앱은 화면 하단에 Google Mobile Ads SDK의 배너 광고를 표시할 수 있습니다. 카메라 사용, 화면 멈춤 또는 글자 읽기 기능의 이용 조건으로 광고 클릭이나 시청을 요구하지 않습니다.</p>
+    <p>앱은 실행 시 Google UMP SDK를 통해 동의 정보를 갱신하고 필요한 지역에서는 광고 동의 화면을 제공합니다. 해당 지역에서는 앱 종료 확인 화면의 “광고 개인정보 설정”을 통해 선택을 다시 확인하거나 변경할 수 있습니다. 필요한 동의를 받지 못했거나 광고 요청이 허용되지 않은 경우 앱은 광고를 요청하지 않습니다.</p>
+    <p>앱은 개발자 자체 사용자 행동 분석 또는 추적 서비스를 사용하지 않습니다. 사용자는 Android 또는 Google 설정에서 광고 ID를 재설정·삭제하거나 광고 맞춤설정을 변경할 수 있으며, 광고의 맞춤 여부와 제공되는 선택지는 지역, Google 설정 및 관련 법령에 따라 달라질 수 있습니다.</p>
 
     <h2>7. 아동의 개인정보</h2>
-    <p>앱은 작은 글씨나 사물을 보기 어려운 사용자를 위한 일반 도구이며 아동을 주 대상으로 하지 않습니다. 앱은 사용자 계정이나 개인정보를 수집하지 않으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+    <p>앱은 작은 글씨나 사물을 보기 어려운 사용자를 위한 일반 도구이며 아동을 주 대상으로 하지 않습니다. 개발자는 아동의 개인정보를 고의로 직접 수집하지 않습니다. Google 광고 서비스가 처리하는 정보에는 Google 정책과 사용자의 지역 및 설정이 적용될 수 있습니다.</p>
 
     <h2>8. 개인정보 처리방침 변경</h2>
     <p>앱 기능, 기기 서비스, 관련 법령 또는 Google Play 정책이 변경되는 경우 이 개인정보 처리방침을 수정할 수 있습니다. 중요한 변경이 있는 경우 이 페이지의 시행일 또는 최종 업데이트일을 갱신합니다.</p>
@@ -209,12 +227,12 @@
 
       <div class="notice">
         <p>This Privacy Policy explains how the Easy Senior Magnifier Android app accesses, uses, retains, and deletes user data.</p>
-        <p>The app does not provide account registration, login, payment, advertising, or internet communication with a developer-operated server. The developer does not maintain user accounts or a user database for this app.</p>
+        <p>The app does not provide account registration, login, or payment and does not operate a developer-controlled user server or database. A banner ad delivered through Google Mobile Ads may appear at the bottom of the app.</p>
         <p>Camera frames, frozen frames, and recognized text are processed on the device to provide app features. The app does not save photos, recognition results, or synthesized audio as files.</p>
       </div>
 
       <h2>1. Data Processed by the App</h2>
-      <p>The app processes the following information to provide magnification and text read-aloud features. The developer does not collect or receive this information.</p>
+      <p>The app processes the following information to provide magnification, text read-aloud, and advertising. The developer does not collect camera frames, frozen images, or recognized text through its own server.</p>
       <table>
         <thead>
         <tr>
@@ -244,6 +262,16 @@
           <td>When the user selects read aloud, recognized text is passed to the device's configured Android TextToSpeech engine. The app does not save synthesized audio to a file.</td>
           <td>To let the user listen to recognized text.</td>
         </tr>
+        <tr>
+          <td>Advertising, device, and diagnostic information</td>
+          <td>Google Mobile Ads SDK may automatically collect and share IP address (which may be used to estimate general location), app and ad interactions, diagnostic information, and device or account identifiers such as Android advertising ID and app set ID.</td>
+          <td>Banner advertising, ad performance measurement, service stability, and fraud prevention.</td>
+        </tr>
+        <tr>
+          <td>Advertising privacy choices</td>
+          <td>Google User Messaging Platform (UMP) SDK may check and process advertising consent status and privacy choices in applicable regions.</td>
+          <td>Provide consent and privacy controls required by applicable law and determine whether ads may be requested.</td>
+        </tr>
         </tbody>
       </table>
 
@@ -253,21 +281,26 @@
         <li>If camera permission is denied, magnifier features are unavailable, but the app shows a clear permission screen instead of closing or displaying a blank screen.</li>
         <li>Users can change or revoke camera permission at any time in Android settings.</li>
         <li>The app does not request microphone, location, contacts, phone, SMS, storage, photo, or video access permission.</li>
-        <li>The app itself does not declare internet or network-state permission. However, the device's configured text-to-speech engine may use a network connection under its own permissions and settings.</li>
+        <li>The app uses internet and network-state permissions to deliver Google advertising and advertising privacy controls and to check network connectivity.</li>
+        <li>Google Mobile Ads SDK may use the Android advertising ID and related identifiers for advertising, measurement, and fraud prevention.</li>
+        <li>The device's configured text-to-speech engine may use a network connection under its own permissions and settings.</li>
       </ul>
 
       <h2>3. Data Transmission and External Services</h2>
-      <p>The app does not upload or sell camera frames, frozen images, or recognized text to a developer-operated server, and does not share them for advertising. The following device functions or external services may process information for their respective roles.</p>
+      <p>The app does not upload or sell camera frames, frozen images, or recognized text to a developer-operated server and does not transmit them to Google advertising services. The following device functions or external services may process information for their respective roles.</p>
       <ul>
         <li><strong>Google ML Kit Korean text recognition:</strong> The Korean recognition model is bundled with the app and processes images and text on the device only after the user selects text reading. The app does not transmit this data to an external server for text recognition.</li>
         <li><strong>Android camera service:</strong> The app uses Android system and device-manufacturer camera functions to provide preview, zoom, focus, and the device light.</li>
         <li><strong>Android text-to-speech service:</strong> Read aloud uses the device's configured TextToSpeech engine. Depending on the engine and selected voice, recognized text may be processed on the device or sent to the engine provider for network-based synthesis. Subsequent processing is governed by that provider's privacy policy and the user's settings.</li>
+        <li><strong>Google Mobile Ads SDK and UMP SDK:</strong> May process the advertising, device, diagnostic, and consent information described above for advertising, consent and privacy-choice management, measurement, and fraud prevention. Camera frames, frozen images, and recognized text are not transmitted to Google advertising services. Data transmitted by Google Mobile Ads SDK is encrypted in transit using TLS.</li>
         <li><strong>GitHub Pages:</strong> The provider hosting this Privacy Policy may process ordinary web request information such as IP address, access time, browser, and user agent while serving the page.</li>
         <li><strong>Legal requirements:</strong> Information may be provided when required by applicable law, court order, or a valid government request. However, the developer does not maintain an app user database.</li>
       </ul>
-      <p>Information processed by Google ML Kit, Android system services, text-to-speech engines, and GitHub Pages may be governed by each provider's policy.</p>
+      <p>Information processed by Google ML Kit, Google advertising services, Android system services, text-to-speech engines, and GitHub Pages may be governed by each provider's policy.</p>
       <ul>
         <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses data for advertising</a></li>
+        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK data disclosure</a></li>
         <li><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub General Privacy Statement</a></li>
       </ul>
 
@@ -279,18 +312,21 @@
         <li>The app does not save audio generated for read-aloud as a file.</li>
         <li>App-specific data is configured to be excluded from Android cloud backup and device-to-device transfer.</li>
         <li>Retention and deletion of data processed by a text-to-speech engine are governed by that provider's policy and the user's settings.</li>
+        <li>Retention and deletion of data processed by Google for advertising and consent features are governed by Google's policies and the user's Google and Android advertising settings.</li>
         <li>The app does not create user accounts, so there is no separate account-deletion process.</li>
       </ul>
 
       <h2>5. Security</h2>
-      <p>The app processes only the minimum data needed for its features. Camera frames and recognized text are processed in device memory and are not stored. The app itself does not use internet permission or a developer-operated server.</p>
+      <p>The app processes only the minimum data needed for its features. Camera frames and recognized text are processed in device memory, are not stored, and are not transmitted to a developer-operated server. Advertising-related network data is transmitted in encrypted form through Google Mobile Ads SDK.</p>
       <p>Security of text passed to a read-aloud engine depends on that engine, the operating system, the device manufacturer, and the user's settings.</p>
 
       <h2>6. Advertising, Analytics, and Tracking</h2>
-      <p>The app does not use advertising SDKs, personalized advertising, user-behavior analytics SDKs, crash-reporting SDKs, or developer-operated tracking services. It does not use an advertising identifier to track users or build user profiles.</p>
+      <p>The app may display a banner ad from Google Mobile Ads SDK at the bottom of the screen. The app does not require an ad click or ad view as a condition of using the camera, screen-freeze, or text-reading features.</p>
+      <p>On launch, the app uses Google UMP SDK to update consent information and, where required, show an advertising consent form. In applicable regions, users can review or change their choices through “Ad privacy settings” in the app's exit confirmation dialog. The app does not request ads if required consent has not been obtained or ad requests are not permitted.</p>
+      <p>The app does not use developer-operated behavioral analytics or tracking services. Users can reset or delete their advertising ID or change ad personalization settings in Android or Google settings. Ad personalization and available choices may vary by region, Google settings, and applicable law.</p>
 
       <h2>7. Children's Privacy</h2>
-      <p>The app is a general-purpose tool for users who have difficulty seeing small text or objects and is not primarily directed to children. The app does not collect user accounts or personal information, and the developer does not knowingly collect children's personal information.</p>
+      <p>The app is a general-purpose tool for users who have difficulty seeing small text or objects and is not primarily directed to children. The developer does not knowingly collect children's personal information directly. Information processed by Google advertising services may be governed by Google's policies and the user's region and settings.</p>
 
       <h2>8. Changes to This Policy</h2>
       <p>This Privacy Policy may be updated due to changes in app features, device services, applicable laws, or Google Play policies. Material changes will be reflected by updating the effective date or last-updated date on this page.</p>
