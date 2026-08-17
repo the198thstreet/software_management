@@ -1,15 +1,15 @@
 {
   "schemaVersion": "2.0.0",
-  "datasetVersion": "2026-08-17-max-v2",
-  "catalogVersion": 2,
+  "datasetVersion": "2026-08-18-municipal-v3",
+  "catalogVersion": 3,
   "locale": "ko-KR",
-  "title": "대한민국 RSS·공식 피드 프리셋",
-  "description": "RSS Feed 앱에서 메뉴를 바로 렌더링할 수 있도록 대분류 > 세부분류 > feeds 구조로 구성한 국내 공식기관·언론 RSS/API 프리셋.",
-  "verifiedAt": "2026-08-17",
+  "title": "대한민국 RSS·공식 웹 피드 프리셋",
+  "description": "골라봄 앱에서 메뉴를 바로 렌더링할 수 있도록 구성한 국내 공식기관·언론 RSS 및 공식 웹 목록 프리셋.",
+  "verifiedAt": "2026-08-18",
   "stats": {
-    "totalFeeds": 307,
+    "totalFeeds": 311,
     "defaultEnabled": 45,
-    "verifiedOfficial": 304,
+    "verifiedOfficial": 308,
     "legacyOfficialUrl": 3,
     "commercialRestricted": 40,
     "categoryCount": 13
@@ -122,7 +122,7 @@
   "strategy": {
     "defaultPresetRule": "원본 기본 활성화 피드를 사용하되 실제 응답 이상이 확인된 피드는 기본 비활성화",
     "commercialUseNote": "공공기관 피드도 개별 저작권/공공누리 정책 확인 권장. 원문 전문 재배포보다 제목·요약·원문링크 방식 권장.",
-    "apiRule": "AllNotify 카탈로그에는 인증 없이 접근 가능한 RSS 소스만 포함하며 API 키가 필요한 소스는 제외."
+    "apiRule": "골라봄 카탈로그에는 인증 없이 접근 가능한 RSS와 앱이 지원하는 공식 웹 목록만 포함하며 API 키가 필요한 소스는 제외."
   },
   "categories": [
     {
@@ -230,7 +230,7 @@
       "icon": "📍",
       "sortOrder": 120,
       "description": "지역 공고·채용·지역뉴스",
-      "feedCount": 12,
+      "feedCount": 16,
       "defaultEnabledCount": 1
     },
     {
@@ -244,6 +244,86 @@
     }
   ],
   "feeds": [
+    {
+      "id": "gyeyang-jobs",
+      "categoryId": "local",
+      "subcategory": "인천광역시 > 계양구 > 채용공고",
+      "organization": "인천광역시 계양구",
+      "name": "계양구 채용공고",
+      "feedUrl": "https://www.gyeyang.go.kr/open_content/main/bbs/bbsMsgList.do?bcd=board_64&pgno=1",
+      "sourceUrl": "https://www.gyeyang.go.kr/open_content/main/bbs/bbsMsgList.do?bcd=board_64&pgno=1",
+      "feedType": "HTML",
+      "defaultEnabled": false,
+      "featured": true,
+      "priority": 5,
+      "requiresApiKey": false,
+      "commercialUse": "check_policy",
+      "verifiedAt": "2026-08-18",
+      "status": "verified_official_html",
+      "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
+      "tags": ["계양구", "채용", "인천"],
+      "region": "KR-28"
+    },
+    {
+      "id": "gyeyang-announcements",
+      "categoryId": "local",
+      "subcategory": "인천광역시 > 계양구 > 고시·공고",
+      "organization": "인천광역시 계양구",
+      "name": "계양구 고시·공고",
+      "feedUrl": "https://www.gyeyang.go.kr/open_content/main/eminwon/announce/eminwonList.do?pgno=1",
+      "sourceUrl": "https://www.gyeyang.go.kr/open_content/main/eminwon/announce/eminwonList.do?pgno=1",
+      "feedType": "HTML",
+      "defaultEnabled": false,
+      "featured": true,
+      "priority": 5,
+      "requiresApiKey": false,
+      "commercialUse": "check_policy",
+      "verifiedAt": "2026-08-18",
+      "status": "verified_official_html",
+      "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
+      "tags": ["계양구", "고시공고", "인천"],
+      "region": "KR-28"
+    },
+    {
+      "id": "bupyeong-jobs",
+      "categoryId": "local",
+      "subcategory": "인천광역시 > 부평구 > 채용공고",
+      "organization": "인천광역시 부평구",
+      "name": "부평구 채용공고",
+      "feedUrl": "https://www.icbp.go.kr/main/eminwon/eminwonJobList.do?pgno=1",
+      "sourceUrl": "https://www.icbp.go.kr/main/eminwon/eminwonJobList.do?pgno=1",
+      "feedType": "HTML",
+      "defaultEnabled": false,
+      "featured": true,
+      "priority": 5,
+      "requiresApiKey": false,
+      "commercialUse": "check_policy",
+      "verifiedAt": "2026-08-18",
+      "status": "verified_official_html",
+      "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
+      "tags": ["부평구", "채용", "인천"],
+      "region": "KR-28"
+    },
+    {
+      "id": "bupyeong-announcements",
+      "categoryId": "local",
+      "subcategory": "인천광역시 > 부평구 > 고시·공고",
+      "organization": "인천광역시 부평구",
+      "name": "부평구 고시·공고",
+      "feedUrl": "https://www.icbp.go.kr/main/eminwon/eminwonAnnounceList.do?pgno=1",
+      "sourceUrl": "https://www.icbp.go.kr/main/eminwon/eminwonAnnounceList.do?pgno=1",
+      "feedType": "HTML",
+      "defaultEnabled": false,
+      "featured": true,
+      "priority": 5,
+      "requiresApiKey": false,
+      "commercialUse": "check_policy",
+      "verifiedAt": "2026-08-18",
+      "status": "verified_official_html",
+      "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
+      "tags": ["부평구", "고시공고", "인천"],
+      "region": "KR-28"
+    },
     {
       "id": "customs-announcement",
       "categoryId": "money_support",
