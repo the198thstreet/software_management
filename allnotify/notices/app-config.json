@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "latestVersionCode": 1,
+  "minimumVersionCode": 1,
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.the198thstreet.allnotify",
+  "updateTitle": "새로운 골라봄이 나왔어요",
+  "updateMessage": "더 안정적이고 편리해진 최신 버전으로 업데이트해 주세요.",
+  "updateButtonText": "업데이트",
+  "notice": {
+    "id": "welcome-2026-08-18",
+    "enabled": true,
+    "showOnce": true,
+    "title": "골라봄에 오신 것을 환영합니다",
+    "message": "원하는 RSS와 공식 채널을 골라 구독하고 나만의 피드를 만들어 보세요.",
+    "buttonText": "확인"
+  }
+}

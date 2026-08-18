@@ -1,17 +1,17 @@
 {
   "schemaVersion": "2.0.0",
-  "datasetVersion": "2026-08-18-municipal-v3",
-  "catalogVersion": 3,
+  "datasetVersion": "2026-08-18-commercial-safe-v4",
+  "catalogVersion": 4,
   "locale": "ko-KR",
   "title": "대한민국 RSS·공식 웹 피드 프리셋",
   "description": "골라봄 앱에서 메뉴를 바로 렌더링할 수 있도록 구성한 국내 공식기관·언론 RSS 및 공식 웹 목록 프리셋.",
   "verifiedAt": "2026-08-18",
   "stats": {
-    "totalFeeds": 311,
+    "totalFeeds": 271,
     "defaultEnabled": 45,
-    "verifiedOfficial": 308,
+    "verifiedOfficial": 268,
     "legacyOfficialUrl": 3,
-    "commercialRestricted": 40,
+    "commercialRestricted": 0,
     "categoryCount": 13
   },
   "rendering": {
@@ -149,7 +149,7 @@
       "icon": "📈",
       "sortOrder": 30,
       "description": "금융정책·경제·연금·자산·무역",
-      "feedCount": 22,
+      "feedCount": 20,
       "defaultEnabledCount": 7
     },
     {
@@ -176,7 +176,7 @@
       "icon": "🧬",
       "sortOrder": 60,
       "description": "건강보험·의료·약제·보건산업",
-      "feedCount": 24,
+      "feedCount": 23,
       "defaultEnabledCount": 2
     },
     {
@@ -185,7 +185,7 @@
       "icon": "💻",
       "sortOrder": 70,
       "description": "AI·SW·보안·R&D·연구성과·기술사업화",
-      "feedCount": 39,
+      "feedCount": 37,
       "defaultEnabledCount": 8
     },
     {
@@ -221,7 +221,7 @@
       "icon": "🎨",
       "sortOrder": 110,
       "description": "문화·저작권·게임·공모전",
-      "feedCount": 25,
+      "feedCount": 20,
       "defaultEnabledCount": 2
     },
     {
@@ -230,7 +230,7 @@
       "icon": "📍",
       "sortOrder": 120,
       "description": "지역 공고·채용·지역뉴스",
-      "feedCount": 16,
+      "feedCount": 15,
       "defaultEnabledCount": 1
     },
     {
@@ -239,7 +239,7 @@
       "icon": "📰",
       "sortOrder": 130,
       "description": "종합·경제·사회·정치·산업 뉴스",
-      "feedCount": 48,
+      "feedCount": 19,
       "defaultEnabledCount": 2
     }
   ],
@@ -261,7 +261,11 @@
       "verifiedAt": "2026-08-18",
       "status": "verified_official_html",
       "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
-      "tags": ["계양구", "채용", "인천"],
+      "tags": [
+        "계양구",
+        "채용",
+        "인천"
+      ],
       "region": "KR-28"
     },
     {
@@ -281,7 +285,11 @@
       "verifiedAt": "2026-08-18",
       "status": "verified_official_html",
       "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
-      "tags": ["계양구", "고시공고", "인천"],
+      "tags": [
+        "계양구",
+        "고시공고",
+        "인천"
+      ],
       "region": "KR-28"
     },
     {
@@ -301,7 +309,11 @@
       "verifiedAt": "2026-08-18",
       "status": "verified_official_html",
       "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
-      "tags": ["부평구", "채용", "인천"],
+      "tags": [
+        "부평구",
+        "채용",
+        "인천"
+      ],
       "region": "KR-28"
     },
     {
@@ -321,7 +333,11 @@
       "verifiedAt": "2026-08-18",
       "status": "verified_official_html",
       "note": "공식 RSS 미제공으로 목록 HTML에서 제목·게시일·원문 링크를 읽습니다.",
-      "tags": ["부평구", "고시공고", "인천"],
+      "tags": [
+        "부평구",
+        "고시공고",
+        "인천"
+      ],
       "region": "KR-28"
     },
     {
@@ -854,58 +870,6 @@
       "presetGroups": [
         "news",
         "tech",
-        "money"
-      ]
-    },
-    {
-      "id": "khan-economy",
-      "categoryId": "finance",
-      "subcategory": "경제뉴스",
-      "organization": "경향신문",
-      "name": "경제",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/economy_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "money"
-      ]
-    },
-    {
-      "id": "donga-economy",
-      "categoryId": "finance",
-      "subcategory": "경제뉴스",
-      "organization": "동아일보",
-      "name": "경제",
-      "feedUrl": "https://rss.donga.com/economy.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
         "money"
       ]
     },
@@ -3096,32 +3060,6 @@
       ]
     },
     {
-      "id": "donga-health",
-      "categoryId": "health_bio",
-      "subcategory": "건강뉴스",
-      "organization": "동아일보",
-      "name": "건강",
-      "feedUrl": "https://rss.donga.com/health.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "health"
-      ]
-    },
-    {
       "id": "hira-notice",
       "categoryId": "health_bio",
       "subcategory": "공지",
@@ -4004,32 +3942,6 @@
       ]
     },
     {
-      "id": "khan-science",
-      "categoryId": "science_it",
-      "subcategory": "과학·환경",
-      "organization": "경향신문",
-      "name": "과학·환경",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/science_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "tech"
-      ]
-    },
-    {
       "id": "msit-policy",
       "categoryId": "science_it",
       "subcategory": "과학기술정책",
@@ -4459,32 +4371,6 @@
       "status": "verified_official",
       "region": "KR",
       "presetGroups": [
-        "tech"
-      ]
-    },
-    {
-      "id": "donga-science",
-      "categoryId": "science_it",
-      "subcategory": "의학·과학",
-      "organization": "동아일보",
-      "name": "의학과학",
-      "feedUrl": "https://rss.donga.com/science.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
         "tech"
       ]
     },
@@ -6346,32 +6232,6 @@
       ]
     },
     {
-      "id": "donga-show",
-      "categoryId": "culture",
-      "subcategory": "공연",
-      "organization": "동아일보",
-      "name": "공연",
-      "feedUrl": "https://rss.donga.com/show.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "culture"
-      ]
-    },
-    {
       "id": "mcst-notice",
       "categoryId": "culture",
       "subcategory": "공지",
@@ -6418,32 +6278,6 @@
       ]
     },
     {
-      "id": "donga-book",
-      "categoryId": "culture",
-      "subcategory": "도서",
-      "organization": "동아일보",
-      "name": "도서",
-      "feedUrl": "https://rss.donga.com/book.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "culture"
-      ]
-    },
-    {
       "id": "copy-trend",
       "categoryId": "culture",
       "subcategory": "동향",
@@ -6463,58 +6297,6 @@
       "status": "verified_official",
       "region": "KR",
       "presetGroups": [
-        "culture"
-      ]
-    },
-    {
-      "id": "khan-culture",
-      "categoryId": "culture",
-      "subcategory": "문화뉴스",
-      "organization": "경향신문",
-      "name": "문화",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/culture_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "culture"
-      ]
-    },
-    {
-      "id": "donga-culture",
-      "categoryId": "culture",
-      "subcategory": "문화연예",
-      "organization": "동아일보",
-      "name": "문화연예",
-      "feedUrl": "https://rss.donga.com/culture.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
         "culture"
       ]
     },
@@ -6635,32 +6417,6 @@
       "status": "verified_official",
       "region": "KR",
       "presetGroups": [
-        "culture"
-      ]
-    },
-    {
-      "id": "sportsdonga-entertainment",
-      "categoryId": "culture",
-      "subcategory": "연예",
-      "organization": "스포츠동아",
-      "name": "엔터테인먼트",
-      "feedUrl": "https://rss.donga.com/sportsdonga/entertainment.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
         "culture"
       ]
     },
@@ -7010,132 +6766,6 @@
       ]
     },
     {
-      "id": "khan-local",
-      "categoryId": "local",
-      "subcategory": "지역뉴스",
-      "organization": "경향신문",
-      "name": "지역",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/local_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news",
-        "local"
-      ]
-    },
-    {
-      "id": "sportsdonga-game",
-      "categoryId": "news",
-      "subcategory": "e스포츠",
-      "organization": "스포츠동아",
-      "name": "e스포츠·게임",
-      "feedUrl": "https://rss.donga.com/sportsdonga/sports_game.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "sportsdonga-golf",
-      "categoryId": "news",
-      "subcategory": "골프",
-      "organization": "스포츠동아",
-      "name": "골프",
-      "feedUrl": "https://rss.donga.com/sportsdonga/golf.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-world",
-      "categoryId": "news",
-      "subcategory": "국제",
-      "organization": "경향신문",
-      "name": "국제",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/kh_world.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-international",
-      "categoryId": "news",
-      "subcategory": "국제",
-      "organization": "동아일보",
-      "name": "국제",
-      "feedUrl": "https://rss.donga.com/international.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
       "id": "etnews-international",
       "categoryId": "news",
       "subcategory": "국제",
@@ -7160,56 +6790,6 @@
       "presetGroups": [
         "news",
         "tech"
-      ]
-    },
-    {
-      "id": "khan-newsletter",
-      "categoryId": "news",
-      "subcategory": "뉴스레터",
-      "organization": "경향신문",
-      "name": "뉴스레터",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/newsletter_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-cartoon",
-      "categoryId": "news",
-      "subcategory": "만평",
-      "organization": "경향신문",
-      "name": "만평",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/cartoon_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
       ]
     },
     {
@@ -7267,56 +6847,6 @@
       ]
     },
     {
-      "id": "khan-society",
-      "categoryId": "news",
-      "subcategory": "사회",
-      "organization": "경향신문",
-      "name": "사회",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/society_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-national",
-      "categoryId": "news",
-      "subcategory": "사회",
-      "organization": "동아일보",
-      "name": "사회",
-      "feedUrl": "https://rss.donga.com/national.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
       "id": "mk-society",
       "categoryId": "news",
       "subcategory": "사회",
@@ -7371,81 +6901,6 @@
       ]
     },
     {
-      "id": "khan-life",
-      "categoryId": "news",
-      "subcategory": "생활",
-      "organization": "경향신문",
-      "name": "라이프",
-      "feedUrl": "http://www.khan.co.kr/rss/rssdata/life_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-lifeinfo",
-      "categoryId": "news",
-      "subcategory": "생활",
-      "organization": "동아일보",
-      "name": "생활정보",
-      "feedUrl": "https://rss.donga.com/lifeinfo.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-woman",
-      "categoryId": "news",
-      "subcategory": "생활",
-      "organization": "동아일보",
-      "name": "여성",
-      "feedUrl": "https://rss.donga.com/woman.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
       "id": "etnews-breaking",
       "categoryId": "news",
       "subcategory": "속보",
@@ -7470,256 +6925,6 @@
       "presetGroups": [
         "news",
         "tech"
-      ]
-    },
-    {
-      "id": "khan-sports",
-      "categoryId": "news",
-      "subcategory": "스포츠",
-      "organization": "경향신문",
-      "name": "스포츠",
-      "feedUrl": "http://www.khan.co.kr/rss/rssdata/kh_sports.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-sports",
-      "categoryId": "news",
-      "subcategory": "스포츠",
-      "organization": "동아일보",
-      "name": "스포츠",
-      "feedUrl": "https://rss.donga.com/sports.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "sportsdonga-sports",
-      "categoryId": "news",
-      "subcategory": "스포츠",
-      "organization": "스포츠동아",
-      "name": "스포츠",
-      "feedUrl": "https://rss.donga.com/sportsdonga/sports.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "sportsdonga-general",
-      "categoryId": "news",
-      "subcategory": "스포츠",
-      "organization": "스포츠동아",
-      "name": "스포츠 일반",
-      "feedUrl": "https://rss.donga.com/sportsdonga/sports_general.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "sportsdonga-baseball",
-      "categoryId": "news",
-      "subcategory": "야구",
-      "organization": "스포츠동아",
-      "name": "야구·MLB",
-      "feedUrl": "https://rss.donga.com/sportsdonga/baseball.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-travel",
-      "categoryId": "news",
-      "subcategory": "여행",
-      "organization": "동아일보",
-      "name": "여행",
-      "feedUrl": "https://rss.donga.com/travel.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-english",
-      "categoryId": "news",
-      "subcategory": "영문",
-      "organization": "경향신문",
-      "name": "영문",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/english_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-video",
-      "categoryId": "news",
-      "subcategory": "영상",
-      "organization": "경향신문",
-      "name": "영상",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/video_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-opinion",
-      "categoryId": "news",
-      "subcategory": "오피니언",
-      "organization": "경향신문",
-      "name": "오피니언",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/opinion_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-editorials",
-      "categoryId": "news",
-      "subcategory": "오피니언",
-      "organization": "동아일보",
-      "name": "사설칼럼",
-      "feedUrl": "https://rss.donga.com/editorials.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
       ]
     },
     {
@@ -7831,56 +7036,6 @@
       ]
     },
     {
-      "id": "khan-people",
-      "categoryId": "news",
-      "subcategory": "인물",
-      "organization": "경향신문",
-      "name": "사람",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/people_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-inmul",
-      "categoryId": "news",
-      "subcategory": "인물",
-      "organization": "동아일보",
-      "name": "사람속으로",
-      "feedUrl": "https://rss.donga.com/inmul.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
       "id": "etnews-people",
       "categoryId": "news",
       "subcategory": "인물",
@@ -7905,81 +7060,6 @@
       "presetGroups": [
         "news",
         "tech"
-      ]
-    },
-    {
-      "id": "khan-interactive",
-      "categoryId": "news",
-      "subcategory": "인터랙티브",
-      "organization": "경향신문",
-      "name": "인터랙티브",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/interactive_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "khan-politic",
-      "categoryId": "news",
-      "subcategory": "정치",
-      "organization": "경향신문",
-      "name": "정치",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/politic_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-politics",
-      "categoryId": "news",
-      "subcategory": "정치",
-      "organization": "동아일보",
-      "name": "정치",
-      "feedUrl": "https://rss.donga.com/politics.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
       ]
     },
     {
@@ -8145,56 +7225,6 @@
       ]
     },
     {
-      "id": "khan-total",
-      "categoryId": "news",
-      "subcategory": "종합",
-      "organization": "경향신문",
-      "name": "전체뉴스",
-      "feedUrl": "https://www.khan.co.kr/rss/rssdata/total_news.xml",
-      "sourceUrl": "https://www.khan.co.kr/help/help_rss.html",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 구독 목적. 다수 이용자 공유·영리 이용은 사전 허락 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
-      "id": "donga-total",
-      "categoryId": "news",
-      "subcategory": "종합",
-      "organization": "동아일보",
-      "name": "전체기사",
-      "feedUrl": "https://rss.donga.com/total.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 3,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "개인 비상업적 이용만 허용. 다수 이용자 대상 상업 활용은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
-      ]
-    },
-    {
       "id": "etnews-recommend",
       "categoryId": "news",
       "subcategory": "추천",
@@ -8219,31 +7249,6 @@
       "presetGroups": [
         "news",
         "tech"
-      ]
-    },
-    {
-      "id": "sportsdonga-soccer",
-      "categoryId": "news",
-      "subcategory": "축구",
-      "organization": "스포츠동아",
-      "name": "축구",
-      "feedUrl": "https://rss.donga.com/sportsdonga/soccer.xml",
-      "sourceUrl": "https://rss.donga.com/",
-      "feedType": "RSS",
-      "defaultEnabled": false,
-      "featured": false,
-      "priority": 2,
-      "requiresApiKey": false,
-      "commercialUse": "restricted_permission_required",
-      "verifiedAt": "2026-08-17",
-      "status": "verified_official",
-      "note": "동아 RSS 정책상 개인 비상업적 이용만 허용. 상업 앱은 사전 문의 필요.",
-      "tags": [
-        "뉴스"
-      ],
-      "region": "KR",
-      "presetGroups": [
-        "news"
       ]
     },
     {
